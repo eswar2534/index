@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIIMS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">
+            <h1>Nursing Care</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#nurses">Our Nurses</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Compassionate Care, Anytime, Anywhere</h1>
+            <p>We provide the highest quality nursing services for patients at home or in hospitals.</p>
+            <a href="https://www.example.com" class="cta-btn" target="_blank">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- Current Page URL Section -->
+    <section id="current-url">
+        <div class="container">
+            <h2>Current Page URL</h2>
+            <p id="url-display"></p>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are a team of highly trained and compassionate nurses offering comprehensive nursing services. Whether you need short-term care or long-term support, we are here to help.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Home Nursing</h3>
+                    <p>Personalized nursing care in the comfort of your home.</p>
+                </div>
+                <div class="card">
+                    <h3>Medical Assistance</h3>
+                    <p>Qualified nurses for post-operative care and ongoing treatments.</p>
+                </div>
+                <div class="card">
+                    <h3>Chronic Care Management</h3>
+                    <p>Expert care for patients with chronic illnesses such as diabetes or heart disease.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Nurses Section -->
+    <section id="nurses" class="nurses">
+        <div class="container">
+            <h2>Meet Our Nurses</h2>
+            <div class="nurse-cards">
+                <div class="nurse-card">
+                    <img src="https://via.placeholder.com/150" alt="Nurse 1">
+                    <h3>Jane Doe, RN</h3>
+                    <p>Experienced in ICU and home care nursing.</p>
+                </div>
+                <div class="nurse-card">
+                    <img src="https://via.placeholder.com/150" alt="Nurse 2">
+                    <h3>John Smith, RN</h3>
+                    <p>Specialized in pediatric and elder care.</p>
+                </div>
+                <div class="nurse-card">
+                    <img src="https://via.placeholder.com/150" alt="Nurse 3">
+                    <h3>Sarah Lee, BSN</h3>
+                    <p>Expert in wound care and pain management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have a question or need immediate care? Get in touch with us!</p>
+            <form action="#" method="POST">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Nursing Care Services | All Rights Reserved</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script>
+        // Get the current URL of the webpage
+        const currentUrl = window.location.href;
+
+        // Display the URL in the element with the id 'url-display'
+        document.getElementById("url-display").textContent = currentUrl;
+    </script>
+</body>
+
+</html>
